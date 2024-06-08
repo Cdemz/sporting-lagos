@@ -77,14 +77,14 @@
     transform-origin: center;
   }
 } */
-/* 
-.part {
-  animation: fadeIn 2s ease-in-out, expand 2s ease-in-out;
-} */
 
-.part-expanding {
+.part {
+  animation: fadeIn 2s ;
+} 
+
+/* .part-expanding {
   animation: expand 2s ease-in-out forwards;
-}
+} */
 
 /* .part-retracting {
   animation: retract 2s ease-in-out forwards;
@@ -92,12 +92,12 @@
 
 .part3 {
 animation-delay: 1s;
-animation: fadeIn 4s ease-in-out, expand 4s ease-in-out;
+animation: fadeIn 4s ease-in-out, expand 4s ease-in-out forwards;
 }
 .part4 {
   
 animation-delay: 0s;
-animation: fadeIn 3s ease-in-out, expand 3s ease-in-out;
+animation: fadeIn 3s ease-in-out, expand 3s ease-in-out forwards;
 }
 
 
