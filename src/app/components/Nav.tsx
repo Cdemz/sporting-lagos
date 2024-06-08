@@ -8,7 +8,7 @@ import { FiSearch, FiMenu } from 'react-icons/fi';
 import { MdClose } from 'react-icons/md';
 
 const Navbar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
@@ -38,8 +38,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 
-      ${isMenuOpen ? 'bg-[var(--color-primary)] h-screen' : isScrolled ? 'bg-[var(--color-primary)]' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 w-full  transition-all duration-300 h-14
+      ${isMenuOpen ? 'bg-[var(--color-primary)] ' : isScrolled ? 'bg-[var(--color-primary)]' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className={` justify-between top-0 left-0 w-full h-full bg-[var(--color-secondary)] text-white transform transition-transform duration-300
+      <div className={` fixed justify-between top-[3.4rem] z-50 left-0 w-full h-[100vh] bg-[var(--color-primary)] text-white transform transition-transform duration-300
         ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="px-4 pt-6 pb-8 capitalize h-full">
           <ul className="space-y-2 grate capitalize text-2xl font-extrabold">

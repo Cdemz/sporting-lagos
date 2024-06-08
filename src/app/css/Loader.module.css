@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: #202e55;
+ 
+ 
 }
 
 .logo {
@@ -11,7 +14,7 @@
   height: 200px;
 }
 
-.logo #part1 {
+/* .logo #part1 {
 
   animation: appear 1s ease-in-out 0s forwards;
 }
@@ -23,70 +26,79 @@
 
 .logo #part3 {
   animation: appear 1s ease-in-out 1s forwards;
-}
+} */
 
 /* Add more animations for additional parts */
 
-@keyframes appear {
+/* @keyframes appear {
   from {
     opacity: 0;
     transform: scale(0);
+    transform-origin: center;
   }
   to {
     opacity: 1;
     transform: scale(1);
+    transform-origin: center;
   }
-}
+} */
 
 /* styles/Loader.module.css */
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform-origin: center;
   }
   to {
     opacity: 1;
+    transform-origin: center;
   }
 }
 
 @keyframes expand {
   from {
     transform: scale(0);
+    transform-origin: center;
+    
   }
   to {
     transform: scale(1);
+    transform-origin: center;
   }
 }
 
-@keyframes retract {
+/* @keyframes retract {
   from {
     transform: scale(1);
+    transform-origin: center;
   }
   to {
     transform: scale(0);
+    transform-origin: center;
   }
-}
-
+} */
+/* 
 .part {
-  animation: fadeIn 3s ease-in-out, expand 2s ease-in-out;
-}
+  animation: fadeIn 2s ease-in-out, expand 2s ease-in-out;
+} */
 
 .part-expanding {
   animation: expand 2s ease-in-out forwards;
 }
 
-.part-retracting {
+/* .part-retracting {
   animation: retract 2s ease-in-out forwards;
-}
+} */
 
-.part3 {
+/* .part3 {
 animation-delay: 1s;
-animation: fadeIn 1s ease-in-out, expand 1s ease-in-out;
+animation: fadeIn 4s ease-in-out, expand 4s ease-in-out;
 }
 .part4 {
   
 animation-delay: 0s;
-animation: fadeIn 1.2s ease-in-out, expand 1.2s ease-in-out;
-}
+animation: fadeIn 4.2s ease-in-out, expand 4.2s ease-in-out;
+} */
 
 
 
