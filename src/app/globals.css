@@ -1,11 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;700&family=Dosis:wght@400;500;600;700&family=Lato:wght@400;700;900&family=Lilita+One&family=Luckiest+Guy&family=Montserrat:wght@400;500;900&family=Poppins:ital,wght@0,400;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'CabinetGrotesk-Regular';
+  src: url('./font/CabinetGrotesk-Regular.woff2') format('woff2'),
+       url('./font/CabinetGrotesk-Regular.woff') format('woff'),
+       url('./font/CabinetGrotesk-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gratelos';
+  src: url('./font/gratelosdisplay.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-bg: #00010a;
+  --color-bg-variant: #9aa5fe;
+  --color-text: #2b2d42;
+  --color-primary: #202e55;
+  --color-primary-v: #a1cbcc;
+  --color-primary-g: #f5f6f7;
+  --color-primary-b: #818a93;
+  --color-primary-a: #0d1010;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,17 +49,36 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: var(--color-primary-g);
+  font-family: "Lato", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.cab {
+  font-family: 'CabinetGrotesk-Regular';
 }
+
+.grate {
+  font-family: 'Gratelos', sans-serif;
+  font-weight: bold;
+}
+
+.lucky {
+  font-family: "Assistant", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins";
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+
