@@ -14,6 +14,7 @@
   height: 200px;
 }
 
+
 /* .logo #part1 {
 
   animation: appear 1s ease-in-out 0s forwards;
@@ -82,6 +83,7 @@
   animation: fadeIn 2s ;
 } 
 
+
 /* .part-expanding {
   animation: expand 2s ease-in-out forwards;
 } */
@@ -90,7 +92,7 @@
   animation: retract 2s ease-in-out forwards;
 } */
 
-.part3 {
+/* .part3 {
 animation-delay: 1s;
 animation: fadeIn 4s ease-in-out, expand 4s ease-in-out forwards;
 }
@@ -98,7 +100,7 @@ animation: fadeIn 4s ease-in-out, expand 4s ease-in-out forwards;
   
 animation-delay: 0s;
 animation: fadeIn 3s ease-in-out, expand 3s ease-in-out forwards;
-}
+} */
 
 
 
