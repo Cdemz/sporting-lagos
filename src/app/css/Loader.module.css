@@ -1,4 +1,4 @@
-/* components/Loader.module.css */
+
 .loader {
   display: flex;
   justify-content: center;
@@ -7,59 +7,86 @@
 }
 
 .logo {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100px;
-  height: 150px;
-  position: relative;
+  width: 200px; /* Adjust size as needed */
+  height: 200px;
 }
 
-.chunk {
-  width: 75px;
-  height: 75px;
-  background-size: 100px 100px;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 0.2s;
+.logo #part1 {
+
+  animation: appear 1s ease-in-out 0s forwards;
 }
 
-.chunk:nth-child(1) { background-position: 0 0; }
-.chunk:nth-child(2) { background-position: -50px 0; }
-.chunk:nth-child(3) { background-position: 0 -50px; }
-.chunk:nth-child(4) { background-position: -50px -50px; }
+.logou #part2 {
 
-.visible {
-  opacity: 1;
+  animation: appear 10s ease-in-out 35s forwards;
 }
 
-.spin {
-  
-  animation: spin 1s forwards;
+.logo #part3 {
+  animation: appear 1s ease-in-out 1s forwards;
 }
 
+/* Add more animations for additional parts */
 
-.expand {
-  animation: expandRetract 2s forwards;
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-@keyframes expandRetract {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.5); }
-  100% { transform: scale(1); }
+/* styles/Loader.module.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-/* .expand {
-  transform: scale(1.2);
-  animation: retract 0.5s ease-in-out 0.5s forwards;
-}
-
-@keyframes retract {
+@keyframes expand {
+  from {
+    transform: scale(0);
+  }
   to {
     transform: scale(1);
   }
-} */
+}
 
-/* @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-} */
+@keyframes retract {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.part {
+  animation: fadeIn 3s ease-in-out, expand 2s ease-in-out;
+}
+
+.part-expanding {
+  animation: expand 2s ease-in-out forwards;
+}
+
+.part-retracting {
+  animation: retract 2s ease-in-out forwards;
+}
+
+.part3 {
+animation-delay: 1s;
+animation: fadeIn 1s ease-in-out, expand 1s ease-in-out;
+}
+.part4 {
+  
+animation-delay: 0s;
+animation: fadeIn 1.2s ease-in-out, expand 1.2s ease-in-out;
+}
+
+
+
