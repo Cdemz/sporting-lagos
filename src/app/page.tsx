@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 export default function Home() {
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     // Simulate a loading delay, ensure it's longer than the animation duration
