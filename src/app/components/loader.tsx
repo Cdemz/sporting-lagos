@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import styles from '../css/Loader.module.css';
 import Logo from '../assets/sporting-logo_biealj.svg'; // Ensure the logo is in the public directory
 
-//lukcy
+
 
 const Loader = () => {
   

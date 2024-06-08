@@ -90,15 +90,15 @@
   animation: retract 2s ease-in-out forwards;
 } */
 
-/* .part3 {
+.part3 {
 animation-delay: 1s;
 animation: fadeIn 4s ease-in-out, expand 4s ease-in-out;
 }
 .part4 {
   
 animation-delay: 0s;
-animation: fadeIn 4.2s ease-in-out, expand 4.2s ease-in-out;
-} */
+animation: fadeIn 3s ease-in-out, expand 3s ease-in-out;
+}
 
 
 
