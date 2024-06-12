@@ -38,7 +38,7 @@
 .button p::before {
   position: absolute;
   /*   box-sizing: border-box; */
-  content: "Subscribe";
+  content: "Continue Reading";
   width: 0%;
   inset: 0;
   color: var(--hovered-color);

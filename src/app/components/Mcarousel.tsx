@@ -17,20 +17,29 @@ const slides: Slide[] = [
     id: 1,
     image:
       "https://images.ctfassets.net/xkju6g0vth1p/7fGmKJvGsT08qf3ZqknuFM/86639627f6b5acd9f07cb8b6bd7744d2/gv.png",
-    type: "Type 1",
-    date: "January 1, 2024",
-    mainText: "Main Text 1",
+    type: "club news",
+    date: "1 month ago",
+    mainText: "SPORTING LAGOS WELCOMES ABDULLAHI BIFFO AS HEAD COACH",
     link: "/read-more-1",
   },
   {
-    id: 2,
+    id: 1,
     image:
-      "https://images.ctfassets.net/xkju6g0vth1p/5O2AxGKB0TMIptOvt6z3zt/ad65d80634a205f6808e8fc6e8e0d15c/ABIA_WARRIORs_vs_Sporting_Lagos.png",
-    type: "Type 2",
-    date: "February 2, 2024",
-    mainText: "Main Text 2",
-    link: "/read-more-2",
+      "https://images.ctfassets.net/xkju6g0vth1p/7fGmKJvGsT08qf3ZqknuFM/86639627f6b5acd9f07cb8b6bd7744d2/gv.png",
+    type: "club news",
+    date: "1 month ago",
+    mainText: "SPORTING LAGOS WELCOMES ABDULLAHI BIFFO AS HEAD COACH",
+    link: "/read-more-1",
   },
+  //   {
+  //     id: 2,
+  //     image:
+  //       "https://images.ctfassets.net/xkju6g0vth1p/5O2AxGKB0TMIptOvt6z3zt/ad65d80634a205f6808e8fc6e8e0d15c/ABIA_WARRIORs_vs_Sporting_Lagos.png",
+  //     type: "Type 2",
+  //     date: "February 2, 2024",
+  //     mainText: "Main Text 2",
+  //     link: "/read-more-2",
+  //   },
   // Add more slides here
 ];
 
@@ -40,7 +49,8 @@ const Carousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 10000);
+    }, 90000);
+    //FIXME CHANGE IT BACK TOO 10000
 
     return () => clearInterval(interval);
   }, []);
@@ -65,28 +75,22 @@ const Carousel: React.FC = () => {
             objectFit="cover"
             className="brightness-75"
           />
-          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-90 p-4 m-4 rounded-lg shadow-lg w-4/5 md:w-2/3 lg:w-1/2">
-            <p className="text-sm font-semibold text-gray-600">{slide.type}</p>
-            <p className="text-sm text-gray-500">{slide.date}</p>
-            <h2 className="text-xl font-bold text-gray-900">
+          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-90 p-4  my-4 rounded-lg shadow-lg w-[90%] md:w-2/3 lg:w-1/2 flex flex-col gap-2">
+            <div className="flex gap-3">
+              <p className="text-sm font-semibold text-[var(--color-primary)]">
+                {slide.type}
+              </p>
+              <p className="text-sm text-gray-500">{slide.date}</p>
+            </div>
+
+            <h2 className="text-xl  text-[var(--color-primary)] font-black">
               {slide.mainText}
             </h2>
-            <Link href="/" className="text-blue-500 underline button type1">
-              <p>Continue Reading</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
+            <Link
+              href="/"
+              className="buttofns  text-[var(--color-primary)]  font-semibold"
+            >
+              <p>CONTINUE READING</p>
             </Link>
           </div>
         </div>

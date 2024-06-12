@@ -1,4 +1,5 @@
 "use client";
+import Countdown from "./components/Countdown";
 import Loader from "./components/loader";
 import Carousel from "./components/Mcarousel";
 import { useState, useEffect } from "react";
@@ -21,8 +22,9 @@ export default function Home() {
   }
 
   return (
-    <main className="bg-black pt-14">
+    <main className="bg-black ">
       <Carousel />
+      <Countdown targetDate="2024-12-31T00:00:00" />
     </main>
   );
 }
