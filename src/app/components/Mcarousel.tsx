@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import "../css/Continue.css";
 interface Slide {
   id: number;
   image: string;
@@ -71,8 +71,22 @@ const Carousel: React.FC = () => {
             <h2 className="text-xl font-bold text-gray-900">
               {slide.mainText}
             </h2>
-            <Link href={slide.link} className="text-blue-500 underline">
-              Continue reading
+            <Link href="/" className="text-blue-500 underline button type1">
+              <p>Continue Reading</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
             </Link>
           </div>
         </div>
