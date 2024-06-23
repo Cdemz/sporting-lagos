@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useQuery, QueryClient, QueryClientProvider } from "react-query";
+import axios from "axios";
 
 // Define the type for the timeLeft object
 type TimeLeft = {
@@ -11,6 +13,20 @@ type TimeLeft = {
 
 type CountdownProps = {
   targetDate: string;
+};
+
+type MatchInfo = {
+  homeTeam: string;
+  awayTeam: string;
+  venue: string;
+};
+
+const fetchMatchInfo = async (): Promise<MatchInfo> => {
+  // Replace with your actual API endpoint
+  const { data } = await axios.get(
+    "https://cdn.contentful.com/spaces/xkju6g0vth1p/environments/master/entries?content_type=sportingTv&order=-fields.date&limit=6"
+  );
+  return data;
 };
 
 const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
@@ -40,6 +56,13 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
     return () => clearTimeout(timer);
   });
 
+  // React Query hook to fetch match info
+  const {
+    data: matchInfo,
+    isLoading,
+    error,
+  } = useQuery<MatchInfo>("matchInfo", fetchMatchInfo);
+
   const intervals = ["days", "hours", "minutes", "seconds"];
   const timerComponents: JSX.Element[] = [];
 
@@ -67,15 +90,33 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   return (
     <div className="flex flex-col items-center space-y-4 bg-[var(--color-primary-a)] text-white p-6 rounded-lg shadow-lg px-14 grate">
-      <div className="text-lg">Sporting Lagos vs Enyimba FC</div>
+      {isLoading ? (
+        <div>Loading match info...</div>
+      ) : error ? (
+        <div>Error fetching match info</div>
+      ) : (
+        <div className="text-lg">
+          {matchInfo?.homeTeam} vs {matchInfo?.awayTeam} at {matchInfo?.venue}
+        </div>
+      )}
       <div className="flex justify-center items-censter space-x-1">
         {timerComponents.length ? timerComponents : <span>Time's up!</span>}
       </div>
-      <button className="bg[var(--color-primary-a)] rounded-[2rem] p-4 text-white grate font-black uppercase outline outline-white   text-xs ">
+      <button className="bg[var(--color-primary-a)] rounded-[2rem] p-4 text-white grate font-black uppercase outline outline-white text-xs">
         GET Ticket
       </button>
     </div>
   );
 };
 
-export default Countdown;
+// Create a client
+const queryClient = new QueryClient();
+
+// Wrap the app with QueryClientProvider
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <Countdown targetDate="2023-12-31T00:00:00" />
+  </QueryClientProvider>
+);
+
+export default App;
