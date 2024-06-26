@@ -115,7 +115,7 @@ const queryClient = new QueryClient();
 // Wrap the app with QueryClientProvider
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <Countdown targetDate="2023-12-31T00:00:00" />
+    <Countdown targetDate="2024-12-31T00:00:00" />
   </QueryClientProvider>
 );
 

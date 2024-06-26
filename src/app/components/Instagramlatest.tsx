@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { fetchInstagramPost } from "../api/instagram";
 
 interface InstagramPost {
   id: string;
@@ -26,13 +27,9 @@ export default function InstagramLatestPost(): JSX.Element {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    async function fetchLatestPost() {
+    async function getLatestPost() {
       try {
-        const response = await fetch("/api/instagram");
-        if (!response.ok) {
-          throw new Error("Failed to fetch Instagram post");
-        }
-        const data: InstagramPost = await response.json();
+        const data = await fetchInstagramPost();
         setPost(data);
       } catch (err) {
         setError(
@@ -43,7 +40,7 @@ export default function InstagramLatestPost(): JSX.Element {
       }
     }
 
-    fetchLatestPost();
+    getLatestPost();
   }, []);
 
   if (loading) return <div className="text-center">Loading...</div>;
