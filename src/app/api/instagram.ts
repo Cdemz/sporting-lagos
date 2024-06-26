@@ -11,3 +11,5 @@ export async function fetchInstagramPost(): Promise<InstagramPost> {
   const data = await response.json();
   return data.graphql.user.edge_owner_to_timeline_media.edges[0].node;
 }
+
+// src/app/api/instagram.ts
