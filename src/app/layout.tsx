@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "keen-slider/keen-slider.min.css";
 import Navbar from "./components/Nav";
 import Footer from "./components/Footer";
 

@@ -71,15 +71,16 @@ const Navbar: React.FC = () => {
           </div>
           <div className=" capitalize hidden lg:flex  ">
             <ul className="text-white grate capitalize text-md font-extrabold flex mr-20">
-              <li className="px-2  capitalize">NEWS</li>
-              <li className="px-2 ">MATCHES</li>
-              <li className="px-2 ">PLAYERS</li>
-              <li className="px-2 ">CLUB INFO</li>
-              <li className="px-2 ">MEMBERSHIP</li>
-              <li className="px-2 ">SPORTING TV</li>
+              {" "}
               <Link href="/academy">
                 <li className="px-2 ">ACADEMY </li>
               </Link>
+              <li className="px-2  capitalize text-gray-400">NEWS</li>
+              <li className="px-2  text-gray-400">MATCHES</li>
+              <li className="px-2  text-gray-400">PLAYERS</li>
+              <li className="px-2 text-gray-400 ">CLUB INFO</li>
+              <li className="px-2  text-gray-400">MEMBERSHIP</li>
+              <li className="px-2  text-gray-400">SPORTING TV</li>
             </ul>
           </div>
           <div className="flex items-center">
@@ -98,15 +99,16 @@ const Navbar: React.FC = () => {
       >
         <div className="px-4 pt-6 pb-8 capitalize h-full">
           <ul className="space-y-2 grate capitalize text-2xl font-extrabold">
-            <li className="px-2 py-1 capitalize">NEWS</li>
-            <li className="px-2 py-1">MATCHES</li>
-            <li className="px-2 py-1">PLAYERS</li>
-            <li className="px-2 py-1">CLUB INFORMATION</li>
-            <li className="px-2 py-1">MEMBERSHIP</li>
-            <li className="px-2 py-1">SPORTING TV</li>
+            {" "}
             <Link href="/academy" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <li className="px-2 py-1">ACADEMY</li>{" "}
             </Link>
+            <li className="px-2  capitalize text-gray-400">NEWS</li>
+            <li className="px-2  text-gray-400">MATCHES</li>
+            <li className="px-2  text-gray-400">PLAYERS</li>
+            <li className="px-2 text-gray-400 ">CLUB INFO</li>
+            <li className="px-2  text-gray-400">MEMBERSHIP</li>
+            <li className="px-2  text-gray-400">SPORTING TV</li>
           </ul>
 
           <div className="mt-32 relative">

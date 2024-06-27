@@ -22,24 +22,24 @@ const slides: Slide[] = [
     mainText: "SPORTING LAGOS WELCOMES ABDULLAHI BIFFO AS HEAD COACH",
     link: "/read-more-1",
   },
+  // {
+  //   id: 1,
+  //   image:
+  //     "https://images.ctfassets.net/xkju6g0vth1p/7fGmKJvGsT08qf3ZqknuFM/86639627f6b5acd9f07cb8b6bd7744d2/gv.png",
+  //   type: "club news",
+  //   date: "1 month ago",
+  //   mainText: "SPORTING LAGOS WELCOMES ABDULLAHI BIFFO AS HEAD COACH",
+  //   link: "/read-more-1",
+  // },
   {
-    id: 1,
+    id: 2,
     image:
-      "https://images.ctfassets.net/xkju6g0vth1p/7fGmKJvGsT08qf3ZqknuFM/86639627f6b5acd9f07cb8b6bd7744d2/gv.png",
-    type: "club news",
-    date: "1 month ago",
-    mainText: "SPORTING LAGOS WELCOMES ABDULLAHI BIFFO AS HEAD COACH",
-    link: "/read-more-1",
+      "https://images.ctfassets.net/xkju6g0vth1p/5O2AxGKB0TMIptOvt6z3zt/ad65d80634a205f6808e8fc6e8e0d15c/ABIA_WARRIORs_vs_Sporting_Lagos.png",
+    type: "Video",
+    date: "February 2, 2024",
+    mainText: "Odinaka okoro joins senior tram",
+    link: "/read-more-2",
   },
-  //   {
-  //     id: 2,
-  //     image:
-  //       "https://images.ctfassets.net/xkju6g0vth1p/5O2AxGKB0TMIptOvt6z3zt/ad65d80634a205f6808e8fc6e8e0d15c/ABIA_WARRIORs_vs_Sporting_Lagos.png",
-  //     type: "Type 2",
-  //     date: "February 2, 2024",
-  //     mainText: "Main Text 2",
-  //     link: "/read-more-2",
-  //   },
   // Add more slides here
 ];
 

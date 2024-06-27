@@ -2,6 +2,35 @@ import React from "react";
 import LeagueTable from "./standing";
 import standingsData from "../academy.json"; // Import your JSON data
 import Welcome from "./welcome";
+import Players from "./players";
+
+const players = [
+  {
+    number: 18,
+    name: "EBEN",
+    position: "Goalkeeper",
+    image: "/eben.png",
+  },
+  {
+    number: 21,
+    name: "LOREM",
+    position: "Defender",
+    image: "/lorem.png",
+  },
+  {
+    number: 3,
+    name: "ADAMU",
+    position: "MIDFIELDER",
+    image: "/adamu.png",
+  },
+  {
+    number: 21,
+    name: "REMSKI",
+    position: "FORWARD",
+    image: "/remi.png",
+  },
+  // Add more player data here
+];
 
 const Page: React.FC = () => {
   return (
@@ -16,6 +45,7 @@ const Page: React.FC = () => {
         </h3>
         <LeagueTable data={standingsData.rows} />
       </div>
+      <Players players={players} />
     </main>
   );
 };
