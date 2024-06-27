@@ -19,7 +19,7 @@ const welcome = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 700, // Set the duration of the animation
+      duration: 1200, // Set the duration of the animation
       once: false, // Whether animation should happen only once - while scrolling down
     });
   }, []);
@@ -62,7 +62,7 @@ const welcome = () => {
               eum vitae nobis, dolores ad natus reprehenderit officia!
             </p>{" "}
           </div>
-          <button className="bg-blue-600 py-4 px-6 rounded-3xl rounded-s-xls mt-5 mb-2">
+          <button className="bg-blue-600 py-4 px-6 rounded-3xl  mt-5 mb-2">
             Read More
           </button>
         </div>

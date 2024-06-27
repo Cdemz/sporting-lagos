@@ -50,8 +50,8 @@ const LeagueTable: React.FC<LeagueTableProps> = ({ data }) => {
       {!showFullTable && (
         <div className="text-center mt-4">
           <button
-            className="bg-blue-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-600 focus:outline-none"
-            onClick={() => setShowFullTable(true)}
+            className="bg-[var(--color-primary)] text-white py-2 px-4 rounded-3xl shadow-md hover:bg-blue-600 focus:outline-none"
+            // onClick={() => setShowFullTable(true)}
           >
             View Full Table
           </button>
