@@ -49,8 +49,8 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+        <div className="flex items-center justify-between h-16 ">
+          <div className="flex items-center lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white focus:outline-none"
@@ -68,6 +68,19 @@ const Navbar: React.FC = () => {
                 className="h-9 w-6"
               />
             </Link>
+          </div>
+          <div className=" capitalize hidden lg:flex  ">
+            <ul className="text-white grate capitalize text-md font-extrabold flex mr-20">
+              <li className="px-2  capitalize">NEWS</li>
+              <li className="px-2 ">MATCHES</li>
+              <li className="px-2 ">PLAYERS</li>
+              <li className="px-2 ">CLUB INFO</li>
+              <li className="px-2 ">MEMBERSHIP</li>
+              <li className="px-2 ">SPORTING TV</li>
+              <Link href="/academy">
+                <li className="px-2 ">ACADEMY </li>
+              </Link>
+            </ul>
           </div>
           <div className="flex items-center">
             <button
@@ -91,6 +104,9 @@ const Navbar: React.FC = () => {
             <li className="px-2 py-1">CLUB INFORMATION</li>
             <li className="px-2 py-1">MEMBERSHIP</li>
             <li className="px-2 py-1">SPORTING TV</li>
+            <Link href="/academy" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              <li className="px-2 py-1">ACADEMY</li>{" "}
+            </Link>
           </ul>
 
           <div className="mt-32 relative">

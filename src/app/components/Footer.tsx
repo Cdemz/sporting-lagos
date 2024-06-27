@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-[var(--color-primary)] text-white text-center py-4 grate flex justify-center flex-col items-center gap-3 md:flex-row md:justify-around md:py-6">
       <div className=" flex flex-col gap-3 items-center">
         <Image
-          className="h-[7vh] w-[10vw] md:h-[20vh]"
+          className="h-[vh] w-[10vw] md:h-[20vh]"
           src="/sp_logo.png "
           height={300}
           width={300}

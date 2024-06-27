@@ -1,6 +1,5 @@
 "use client";
 import Countdown from "./components/Countdown";
-// import InstagramLatestPost from "./components/Instagramlatest";
 import Loader from "./components/loader";
 import Carousel from "./components/Mcarousel";
 import { useState, useEffect } from "react";
@@ -22,10 +21,13 @@ export default function Home() {
     return <Loader />;
   }
 
+  // Define your target date
+  const targetDate = "2024-12-31T00:00:00";
+
   return (
-    <main className="bg-black ">
+    <main className="bg-black">
       <Carousel />
-      <Countdown targetDate="2024-12-31T00:00:00" />
+      <Countdown />
     </main>
   );
 }

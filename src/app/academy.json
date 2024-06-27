@@ -1,0 +1,371 @@
+{
+  "tournament": {
+    "name": "NLO Division One League - Maracana 2 Centre",
+    "slug": "nlo-division-one-league-maracana-2-centre",
+    "category": {
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "sport": {
+        "name": "Football",
+        "slug": "football",
+        "id": 1
+      },
+      "id": 1132,
+      "flag": "nigeria",
+      "alpha2": "NG"
+    },
+    "uniqueTournament": {
+      "name": "NLO Division One League",
+      "slug": "nlo-division-one-league",
+      "category": {
+        "name": "Nigeria",
+        "slug": "nigeria",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "id": 1132,
+        "flag": "nigeria",
+        "alpha2": "NG"
+      },
+      "userCount": 501,
+      "hasPerformanceGraphFeature": false,
+      "id": 22115,
+      "displayInverseHomeAwayTeams": false
+    },
+    "priority": 0,
+    "isGroup": true,
+    "groupName": "Maracana 2 Centre",
+    "id": 128916
+  },
+  "type": "total",
+  "name": "NLO Division One League - Maracana 2 Centre 2024",
+  "descriptions": [],
+  "rows": [
+    {
+      "team": {
+        "name": "Ojodu City Fc",
+        "slug": "ojodu-city-fc",
+        "shortName": "Ojodu City Fc ",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 43,
+        "nameCode": "OCF",
+        "national": false,
+        "type": 0,
+        "id": 515387,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 1,
+      "matches": 9,
+      "wins": 8,
+      "scoresFor": 24,
+      "scoresAgainst": 5,
+      "id": 1061885,
+      "losses": 1,
+      "draws": 0,
+      "points": 24
+    },
+    {
+      "team": {
+        "name": "Ooim Fc",
+        "slug": "ooim-fc",
+        "shortName": "Ooim Fc ",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 26,
+        "nameCode": "OFC",
+        "national": false,
+        "type": 0,
+        "id": 515388,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 2,
+      "matches": 9,
+      "wins": 6,
+      "scoresFor": 24,
+      "scoresAgainst": 11,
+      "id": 1061888,
+      "losses": 1,
+      "draws": 2,
+      "points": 20
+    },
+    {
+      "team": {
+        "name": "Admiralty Fc",
+        "slug": "admiralty-fc",
+        "shortName": "Admiralty Fc ",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 25,
+        "nameCode": "AFC",
+        "national": false,
+        "type": 0,
+        "id": 515393,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 3,
+      "matches": 9,
+      "wins": 4,
+      "scoresFor": 23,
+      "scoresAgainst": 11,
+      "id": 1061903,
+      "losses": 1,
+      "draws": 4,
+      "points": 16
+    },
+    {
+      "team": {
+        "name": "Glory Boys Fc",
+        "slug": "glory-boys-fc",
+        "shortName": "Glory Boys Fc ",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 16,
+        "nameCode": "GBF",
+        "national": false,
+        "type": 0,
+        "id": 515389,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 4,
+      "matches": 9,
+      "wins": 4,
+      "scoresFor": 25,
+      "scoresAgainst": 13,
+      "id": 1061891,
+      "losses": 4,
+      "draws": 1,
+      "points": 13
+    },
+    {
+      "team": {
+        "name": "Sporting Lagos FA",
+        "slug": "sporting-lagos-fa",
+        "shortName": "Sporting Lagos",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 20,
+        "nameCode": "SLF",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 515392,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 5,
+      "matches": 9,
+      "wins": 3,
+      "scoresFor": 20,
+      "scoresAgainst": 15,
+      "id": 1061900,
+      "losses": 2,
+      "draws": 4,
+      "points": 13
+    },
+    {
+      "team": {
+        "name": "Roro Fc",
+        "slug": "roro-fc",
+        "shortName": "Roro Fc ",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 20,
+        "nameCode": "RFC",
+        "national": false,
+        "type": 0,
+        "id": 515391,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 7,
+      "matches": 9,
+      "wins": 4,
+      "scoresFor": 24,
+      "scoresAgainst": 20,
+      "id": 1061897,
+      "losses": 4,
+      "draws": 1,
+      "points": 13
+    },
+    {
+      "team": {
+        "name": "Best Young Talent Fc",
+        "slug": "best-young-talent-fc",
+        "shortName": "Byt Fc ",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 23,
+        "nameCode": "BFC",
+        "national": false,
+        "type": 0,
+        "id": 515385,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 7,
+      "matches": 9,
+      "wins": 3,
+      "scoresFor": 15,
+      "scoresAgainst": 15,
+      "id": 1061879,
+      "losses": 2,
+      "draws": 4,
+      "points": 13
+    },
+    {
+      "team": {
+        "name": "Okaka Fc",
+        "slug": "okaka-fc",
+        "shortName": "Okaka Fc ",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 9,
+        "nameCode": "OFC",
+        "national": false,
+        "type": 0,
+        "id": 515390,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 8,
+      "matches": 9,
+      "wins": 1,
+      "scoresFor": 11,
+      "scoresAgainst": 21,
+      "id": 1061894,
+      "losses": 5,
+      "draws": 3,
+      "points": 6
+    },
+    {
+      "team": {
+        "name": "Emmydinho Fc",
+        "slug": "emmydinho-fc",
+        "shortName": "Emmydinho Fc ",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 11,
+        "nameCode": "EFC",
+        "national": false,
+        "type": 0,
+        "id": 515386,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 9,
+      "matches": 9,
+      "wins": 0,
+      "scoresFor": 11,
+      "scoresAgainst": 24,
+      "id": 1061882,
+      "losses": 5,
+      "draws": 4,
+      "points": 4
+    },
+    {
+      "team": {
+        "name": "Buruj Fc",
+        "slug": "buruj-fc",
+        "shortName": "Buruj Fc ",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 16,
+        "nameCode": "BFC",
+        "national": false,
+        "type": 0,
+        "id": 515384,
+        "teamColors": {
+          "primary": "#52b030",
+          "secondary": "#52b030",
+          "text": "#ffffff"
+        }
+      },
+      "descriptions": [],
+      "position": 10,
+      "matches": 9,
+      "wins": 0,
+      "scoresFor": 6,
+      "scoresAgainst": 48,
+      "id": 1061876,
+      "losses": 8,
+      "draws": 1,
+      "points": 1
+    }
+  ],
+  "id": 122182,
+  "updatedAtTimestamp": 1713130114
+}

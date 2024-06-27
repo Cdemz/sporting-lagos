@@ -11,10 +11,6 @@ type TimeLeft = {
   seconds: number;
 };
 
-type CountdownProps = {
-  targetDate: string;
-};
-
 type MatchInfo = {
   homeTeam: string;
   awayTeam: string;
@@ -26,10 +22,12 @@ const fetchMatchInfo = async (): Promise<MatchInfo> => {
   const { data } = await axios.get(
     "https://cdn.contentful.com/spaces/xkju6g0vth1p/environments/master/entries?content_type=sportingTv&order=-fields.date&limit=6"
   );
-  return data;
+  return data.items[0].fields;
 };
 
-const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
+const Countdown: React.FC = () => {
+  const targetDate = "2024-12-31T00:00:00"; // Set the target date here
+
   const calculateTimeLeft = (): TimeLeft | {} => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft: TimeLeft | {} = {};
@@ -99,10 +97,10 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           {matchInfo?.homeTeam} vs {matchInfo?.awayTeam} at {matchInfo?.venue}
         </div>
       )}
-      <div className="flex justify-center items-censter space-x-1">
+      <div className="flex justify-center items-center space-x-1">
         {timerComponents.length ? timerComponents : <span>Time's up!</span>}
       </div>
-      <button className="bg[var(--color-primary-a)] rounded-[2rem] p-4 text-white grate font-black uppercase outline outline-white text-xs">
+      <button className="bg-[var(--color-primary-a)] rounded-[2rem] p-4 text-white grate font-black uppercase outline outline-white text-xs">
         GET Ticket
       </button>
     </div>
@@ -112,10 +110,10 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 // Create a client
 const queryClient = new QueryClient();
 
-// Wrap the app with QueryClientProvider
+// Wrap the Countdown component with QueryClientProvider
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <Countdown targetDate="2024-12-31T00:00:00" />
+    <Countdown />
   </QueryClientProvider>
 );
 
