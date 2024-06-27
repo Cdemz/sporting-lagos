@@ -39,6 +39,7 @@
   --color-primary-g: #f5f6f7;
   --color-primary-b: #818a93;
   --color-primary-a: #181f39;
+  --color-primary-c: #a48e0f;
 }
 html {
   scroll-behavior: smooth;
