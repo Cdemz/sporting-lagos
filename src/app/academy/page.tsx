@@ -24,7 +24,7 @@ const players = [
     image: "/adamu.png",
   },
   {
-    number: 21,
+    number: 23,
     name: "REMSKI",
     position: "FORWARD",
     image: "/remi.png",

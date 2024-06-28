@@ -66,6 +66,7 @@ const Navbar: React.FC = () => {
                 width={300}
                 height={300}
                 className="h-9 w-6"
+                priority
               />
             </Link>
           </div>

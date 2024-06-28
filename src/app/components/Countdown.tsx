@@ -17,13 +17,13 @@ type MatchInfo = {
   venue: string;
 };
 
-const fetchMatchInfo = async (): Promise<MatchInfo> => {
-  // Replace with your actual API endpoint
-  const { data } = await axios.get(
-    "https://cdn.contentful.com/spaces/xkju6g0vth1p/environments/master/entries?content_type=sportingTv&order=-fields.date&limit=6"
-  );
-  return data.items[0].fields;
-};
+// const fetchMatchInfo = async (): Promise<MatchInfo> => {
+//   // Replace with your actual API endpoint
+//   // const { data } = await axios.get(
+//   //   "https://cdn.contentful.com/spaces/xkju6g0vth1p/environments/master/entries?content_type=sportingTv&order=-fields.date&limit=6"
+//   // );
+//   // return data.items[0].fields;
+// };
 
 const Countdown: React.FC = () => {
   const targetDate = "2024-12-31T00:00:00"; // Set the target date here
@@ -55,11 +55,11 @@ const Countdown: React.FC = () => {
   });
 
   // React Query hook to fetch match info
-  const {
-    data: matchInfo,
-    isLoading,
-    error,
-  } = useQuery<MatchInfo>("matchInfo", fetchMatchInfo);
+  // const {
+  //   data: matchInfo,
+  //   isLoading,
+  //   error,
+  // } = useQuery<MatchInfo>("matchInfo", fetchMatchInfo);
 
   const intervals = ["days", "hours", "minutes", "seconds"];
   const timerComponents: JSX.Element[] = [];
@@ -88,7 +88,7 @@ const Countdown: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center space-y-4 bg-[var(--color-primary-a)] text-white p-6 rounded-lg shadow-lg px-14 grate">
-      {isLoading ? (
+      {/* {isLoading ? (
         <div>Loading match info...</div>
       ) : error ? (
         <div>Error fetching match info</div>
@@ -96,7 +96,7 @@ const Countdown: React.FC = () => {
         <div className="text-lg">
           {matchInfo?.homeTeam} vs {matchInfo?.awayTeam} at {matchInfo?.venue}
         </div>
-      )}
+      )} */}
       <div className="flex justify-center items-center space-x-1">
         {timerComponents.length ? timerComponents : <span>Time's up!</span>}
       </div>

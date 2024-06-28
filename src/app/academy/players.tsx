@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 
 interface Player {
@@ -14,8 +14,15 @@ interface ImageCarouselProps {
 }
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ players }) => {
+  const [currentSlide, setCurrentSlide] = useState("0");
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
+    slideChanged: (slider) => {
+      console.log(
+        `Changed from ${currentSlide} to ${slider?.track?.details?.rel}`
+      );
+      setCurrentSlide(String(slider?.track?.details?.rel));
+    },
   });
 
   return (
@@ -44,9 +51,11 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ players }) => {
         {players.map((_, index) => (
           <div
             key={index}
-            className={`h-1 ${index === 0 ? "bg-blue-500" : "bg-gray-200"}`}
+            className={`h-1 rounded-md ${
+              index === Number(currentSlide) ? "bg-blue-500" : "bg-gray-200"
+            }`}
             style={{
-              width: `${100 / players.length}%`,
+              width: 100,
             }}
           ></div>
         ))}

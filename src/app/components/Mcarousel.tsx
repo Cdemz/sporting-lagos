@@ -34,7 +34,7 @@ const slides: Slide[] = [
   {
     id: 2,
     image:
-      "https://images.ctfassets.net/xkju6g0vth1p/5O2AxGKB0TMIptOvt6z3zt/ad65d80634a205f6808e8fc6e8e0d15c/ABIA_WARRIORs_vs_Sporting_Lagos.png",
+      "https://images.ctfassets.net/xkju6g0vth1p/2X97dFJuE8G7QupU869GYb/20007a8e3437c294d08ad2f4356f2a00/odinaka_joins_senior_team.png",
     type: "Video",
     date: "February 2, 2024",
     mainText: "Odinaka okoro joins senior tram",
@@ -49,8 +49,8 @@ const Carousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 90000);
-    //FIXME CHANGE IT BACK TOO 10000
+    }, 5000);
+    //FIXME CHANGE IT BACK TOO 90000 if youre testing shit
 
     return () => clearInterval(interval);
   }, []);
